@@ -1,0 +1,26 @@
+{
+  "name": "hello-next",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.6.2",
+    "express": "^4.15.3",
+    "isomorphic-unfetch": "^1.0.0",
+    "module-alias": "^2.0.0",
+    "next": "^2.4.0",
+    "preact": "^8.1.0",
+    "preact-compat": "^3.16.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  }
+}
