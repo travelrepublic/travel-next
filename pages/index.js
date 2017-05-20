@@ -40,8 +40,9 @@ const Index =  props => (
 )
 
 Index.getInitialProps = async () => {
-    const res = await fetch('http://www.omdbapi.com/?s=pokemon')
+    const res = await fetch('https://www.omdbapi.com/?apikey=c1fdf939&s=pokemon')
     const data = await res.json()
+    console.log('Data: ' + JSON.stringify(data));
 
     console.log(`Movie data fetched. Count ${data.Search.length}`)
 

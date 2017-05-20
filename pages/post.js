@@ -11,7 +11,7 @@ const Post = (props) => (
 
 Post.getInitialProps = async (context) => {
     const {id} = context.query;
-    const res = await fetch(`http://www.omdbapi.com/?i=${id}`)
+    const res = await fetch(`https://www.omdbapi.com/?apikey=c1fdf939&i=${id}`)
     const movie = await res.json()
 
     console.log(`Fetched movie: ${movie.Title}`)
