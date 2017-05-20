@@ -12,6 +12,9 @@ const Header = () => (
         <Link prefetch href="/about">
             <a style={linkStyle}>About</a>
         </Link>
+        <Link prefetch href="/destination">
+            <a style={linkStyle}>Destination</a>
+        </Link>
     </div>
 )
 
