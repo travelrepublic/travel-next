@@ -4,7 +4,7 @@ import fetch from 'isomorphic-unfetch';
 
 const MovieLink = ({movie}) => (
     <li>
-        <Link as={`/p/${movie.imdbID}`} href={`/post?id=${movie.imdbID}`}>
+        <Link prefetch as={`/p/${movie.imdbID}`} href={`/post?id=${movie.imdbID}`}>
             <a>{movie.Title}</a>
         </Link>
         <style jsx>{`
