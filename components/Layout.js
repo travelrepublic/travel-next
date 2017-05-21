@@ -2,8 +2,6 @@ import Header from './Header';
 
 const layoutStyle = {
     margin: 20,
-    padding: 20,
-    border: '1px solid #DDD'
 }
 
 const Layout = (props) => (
@@ -13,6 +11,10 @@ const Layout = (props) => (
         <style jsx global>{`
             h1 {
                 font-style: italic;
+            }
+            * {
+                font-family: Arial;
+                box-sizing: border-box;
             }
         `}</style>
     </div>

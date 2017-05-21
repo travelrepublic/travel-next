@@ -1,12 +1,14 @@
 import Layout from '../components/Layout';
 import fetch from 'isomorphic-unfetch';
+import HotelCard from '../components/HotelCard';
 
 const Destination = props => (
     <Layout>
-        <h1>Let's see if we can replicate a destination landing page</h1>
-        <p>It will need to support the corrrect route format</p>
-        <p>be server side rendered</p>
-        <p>and maybe support some basic filtering</p>
+        <h1>Hotels in Tenerife</h1>
+        <p>Rendered on the server!</p>
+        {props.hotels.map(hotel => (
+            <HotelCard hotel={hotel} key={hotel.Id} />
+        ))}
     </Layout>
 )
 
@@ -51,7 +53,7 @@ Destination.getInitialProps = async () => {
     console.log(`Hotel data fetched. Count ${data.Hotels.length}`)
 
     return {
-        movies: data.Search
+        hotels: data.Hotels
     }
 }
 
