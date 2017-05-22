@@ -30,8 +30,6 @@ const HotelCard = ({hotel}) => (
             .hotel-card {
                 padding: 10px;
                 width:50%;
-                float: left;
-                position: relative;
             }
             .card-border {
                 border: 1px solid #ccc;
@@ -43,16 +41,6 @@ const HotelCard = ({hotel}) => (
                 font-weight: bold;
                 font-size:20px;
                 color:red;
-            }
-
-            .left {
-                float: left;
-                width: 50%;
-            }
-
-            .right {
-                float: left;
-                width: 50%;
             }
 
             .select {

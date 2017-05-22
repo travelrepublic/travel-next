@@ -6,9 +6,22 @@ const Destination = props => (
     <Layout>
         <h1>Hotels in Tenerife</h1>
         <p>Rendered on the server!</p>
-        {props.hotels.map(hotel => (
-            <HotelCard hotel={hotel} key={hotel.Id} />
-        ))}
+        <div className="hotels">
+            {props.hotels.map(hotel => (
+                <HotelCard hotel={hotel} key={hotel.Id} />
+            ))}
+        </div>
+        <style jsx>{`
+            .hotels {
+                display: flex;
+                flex-direction: row;
+                align-items: top;
+                flex-flow: row wrap;
+                flex-wrap: wrap;
+                align-content: flex-end;
+            }
+        `}</style>
+
     </Layout>
 )
 
