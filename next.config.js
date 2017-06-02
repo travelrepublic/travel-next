@@ -1,6 +1,5 @@
 module.exports = {
     webpack: function(config, {dev}) {
-        return config;
         if(dev) {
             return config
         }
