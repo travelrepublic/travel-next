@@ -1,5 +1,13 @@
 module.exports = {
     webpack: function(config, {dev}) {
+
+        // config.resolve.extensions = [".tsx",".ts"];
+        // config.module.rules.push({
+        //     test: /\.tsx?$/,
+        //     loader: 'ts-loader',
+        //     exclude: /node_modules/,
+        // });
+
         if(dev) {
             return config
         }

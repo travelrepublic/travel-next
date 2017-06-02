@@ -1,6 +1,10 @@
 import * as React from 'react'
 
+function sayHello(from: string) : string {
+    return `Can this really be typescript, ${from}?`;
+}
+
 export default () => 
     <div>
-        <p>This is a typescipt widget</p>
+        <p>{sayHello('Julian')}</p>
     </div>

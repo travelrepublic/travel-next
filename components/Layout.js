@@ -1,4 +1,5 @@
 import Header from './Header';
+import Widget from './Widget';
 
 const layoutStyle = {
     margin: 20,
@@ -7,6 +8,7 @@ const layoutStyle = {
 const Layout = (props) => (
     <div style={layoutStyle}>
         <Header />
+        <Widget />
         {props.children}
         <style jsx global>{`
             h1 {
