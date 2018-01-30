@@ -24,7 +24,7 @@ const Index =  props => (
     <Layout>
         <h1>Pokemon Movies</h1>
         <ul>
-            {props.movies.map(movie => (
+            {props.movies && props.movies.map(movie => (
                 <MovieLink key={movie.imdbID} movie={movie} />
             ))}
         </ul>
@@ -44,7 +44,7 @@ Index.getInitialProps = async () => {
     const data = await res.json()
     console.log('Data: ' + JSON.stringify(data));
 
-    console.log(`Movie data fetched. Count ${data.Search.length}`)
+    console.log(`Movie data fetched. Count ${data.Search && data.Search.length}`)
 
     return {
         movies: data.Search
